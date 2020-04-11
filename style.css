@@ -150,6 +150,7 @@ button {
     width: 50% !important;
 }
 
+/* Smaller screens */
 @media(max-width: 1200px) {
     li {
         flex-direction: column;
