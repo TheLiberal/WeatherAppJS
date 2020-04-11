@@ -112,6 +112,16 @@ ul>a>li>h3 {
 
 /* IDs */
 
+#notfound {
+    margin: auto;
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
+    color: rgb(201, 15, 15);
+    letter-spacing: 0.02rem;
+    font-weight: 600;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
 
 #description-box {
     flex-direction: row;

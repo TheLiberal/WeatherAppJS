@@ -27,4 +27,10 @@ class UI {
         document.getElementById("windspeed").innerHTML = "";
         document.getElementById("cloudiness").innerHTML = "";
     }
+    showNotFound() {
+        document.getElementById("notfound").innerHTML = "City Not Found";
+        setTimeout(() => {
+            document.getElementById("notfound").innerHTML = "";
+        }, 3000);
+    }
 }

@@ -5,14 +5,14 @@ const weather = new Weather;
 // Init UI
 const ui = new UI;
 
+// User searched city
 let searchCity;
-
 
 document.getElementById("second-btn").addEventListener('click', (e) => {
     //Search input
     searchCity = document.getElementById("search_input").value;
     if (searchCity === "") {
-        console.log("Not found");
+        ui.showNotFound();
     } else {
         //Make HTTP call
         weather.getWeather(searchCity)
