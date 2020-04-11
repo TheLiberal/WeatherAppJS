@@ -72,11 +72,10 @@ input {
     width: 80%;
     padding: 0.5rem;
     border: #FFF 1px;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: 'Raleway';
     transition-property: background;
     transition-duration: 1s;
-
     border-radius: 8px;
     background: #EFEEEE;
     box-shadow: 6px 6px 13px #cbcaca,
@@ -92,13 +91,13 @@ input:focus {
     border: none;
     border-radius: 5px;
     font-family: 'Raleway' !important;
-    font-size: 15px !important;
+    font-size: 0.9rem !important;
     font-weight: 500;
     background: #EFEEEE;
 }
 
 #first-btn {
-    color: rgb(201, 15, 15);
+    color: rgb(201, 15, 15) !important;
     letter-spacing: 0.08rem;
     transition-property: color;
     transition-duration: 0.5s;
@@ -107,7 +106,7 @@ input:focus {
 }
 
 #first-btn:hover {
-    color: rgba(201, 15, 15, 0.5);
+    color: rgba(201, 15, 15, 0.5) !important;
 }
 
 #second-btn {
@@ -128,7 +127,55 @@ input:focus {
     color: #EFEEEE;
 }
 
+#second-button {
+    transition-property: background, color;
+    transition-duration: 1.2s;
+
+    border-radius: 8px;
+    background: #EFEEEE;
+    box-shadow: 5px 5px 10px #cbcaca,
+        -5px -5px 10px #ffffff;
+    color: #108fdc;
+    text-align: center;
+    margin: auto;
+}
+
+
 .buttons {
     display: flex;
     justify-content: right;
+}
+
+button {
+    width: 50% !important;
+}
+
+@media(max-width: 1200px) {
+    li {
+        flex-direction: column;
+    }
+
+    .buttons {
+        justify-content: center !important;
+        flex-direction: column-reverse;
+
+    }
+
+    button {
+        margin: auto;
+    }
+
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .container .card ul li div:nth-of-type(2n) {
+        margin-top: 0.28rem;
+    }
+
+    h3 {
+        /* margin: auto; */
+        text-align: center;
+    }
 }
