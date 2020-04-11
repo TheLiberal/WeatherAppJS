@@ -101,8 +101,6 @@ input:focus {
     letter-spacing: 0.08rem;
     transition-property: color;
     transition-duration: 0.5s;
-
-
 }
 
 #first-btn:hover {
@@ -113,7 +111,6 @@ input:focus {
     letter-spacing: 0.08rem;
     transition-property: background, color;
     transition-duration: 1.2s;
-
     border-radius: 8px;
     background: #EFEEEE;
     box-shadow: 5px 5px 10px #cbcaca,
@@ -130,7 +127,6 @@ input:focus {
 #second-button {
     transition-property: background, color;
     transition-duration: 1.2s;
-
     border-radius: 8px;
     background: #EFEEEE;
     box-shadow: 5px 5px 10px #cbcaca,
@@ -146,9 +142,9 @@ input:focus {
     justify-content: right;
 }
 
-button {
+/* button {
     width: 50% !important;
-}
+} */
 
 /* Smaller screens */
 @media(max-width: 1200px) {
@@ -176,7 +172,8 @@ button {
     }
 
     h3 {
-        /* margin: auto; */
+        margin: auto !important;
+        margin-bottom: 1rem !important;
         text-align: center;
     }
 }
