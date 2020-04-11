@@ -71,6 +71,10 @@ li:hover {
     color: #EFEEEE;
 }
 
+ul>a>li>h3 {
+    display: block;
+    margin: auto;
+}
 
 /* CLASSES */
 .container {
@@ -108,8 +112,9 @@ li:hover {
 
 /* IDs */
 
+
 #description-box {
-    flex-direction: column;
+    flex-direction: row;
     line-height: 1.5rem;
 }
 
