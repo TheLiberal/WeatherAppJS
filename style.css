@@ -17,7 +17,7 @@ h1 {
     text-align: left;
     letter-spacing: 0.05rem;
     color: rgba(34, 34, 34, 0.856);
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 input {
@@ -103,10 +103,15 @@ li:hover {
 
 .buttons {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 /* IDs */
+
+#description-box {
+    flex-direction: column;
+    line-height: 1.5rem;
+}
 
 #first-btn {
     color: rgb(201, 15, 15) !important;
@@ -150,18 +155,24 @@ li:hover {
 
 /* Smaller screens */
 @media only screen and (max-width: 1200px) {
+    h1 {
+        margin: auto !important;
+        margin-bottom: 1rem !important;
+        text-align: center;
+    }
+
     li {
         flex-direction: column;
+    }
+
+    button {
+        margin: auto;
     }
 
     .buttons {
         justify-content: center !important;
         flex-direction: column-reverse;
 
-    }
-
-    button {
-        margin: auto;
     }
 
     .container {
@@ -171,11 +182,5 @@ li:hover {
 
     .container .card ul li div:nth-of-type(2n) {
         margin-top: 0.28rem;
-    }
-
-    h1 {
-        margin: auto !important;
-        margin-bottom: 1rem !important;
-        text-align: center;
     }
 }
