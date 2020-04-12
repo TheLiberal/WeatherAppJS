@@ -177,7 +177,7 @@ ul>a>li>h3 {
     }
 
     li {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     button {
