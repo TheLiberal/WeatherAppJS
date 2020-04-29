@@ -25,4 +25,5 @@ document.getElementById("second-btn").addEventListener('click', (e) => {
 document.getElementById("first-btn").addEventListener("click", (e) => {
     // Clear the output
     ui.clear();
+    e.preventDefault();
 });
