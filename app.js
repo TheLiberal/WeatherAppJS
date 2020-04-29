@@ -1,4 +1,3 @@
-"use strict";
 
 // Init Weather
 const weather = new Weather;
