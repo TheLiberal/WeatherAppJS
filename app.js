@@ -4,10 +4,11 @@ const weather = new Weather;
 // Init UI
 const ui = new UI;
 
-// User searched city
-let searchCity;
+
 
 document.getElementById("second-btn").addEventListener('click', (e) => {
+    // User searched city
+    let searchCity;
     //Search input
     searchCity = document.getElementById("search_input").value;
     if (searchCity === "") {
