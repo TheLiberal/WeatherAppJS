@@ -1,4 +1,3 @@
-"use strict";
 class UI {
     constructor() {
         this.temperature = document.getElementById("temperature");
