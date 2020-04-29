@@ -17,7 +17,7 @@ document.getElementById("second-btn").addEventListener('click', (e) => {
         weather.getWeather(searchCity)
             .then(data => {
                 ui.showInformation(data.weather);
-            })
+            });
     }
     e.preventDefault();
 });
