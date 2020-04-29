@@ -1,4 +1,3 @@
-"use strict";
 class Weather {
     constructor() {
         this.api_key = "753817e77bafd9796a32d0ba7e32ba54";
